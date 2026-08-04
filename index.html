@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accede Gratis - Sadisoft IA y Contenido</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Segoe UI, system-ui, sans-serif; background: #0a0a0f; color: #fff; min-height: 100vh; display: flex; flex-direction: column; align-items: center; }
+.hero { width: 100%; max-width: 680px; padding: 60px 24px 0; text-align: center; }
+.badge { display: inline-block; background: rgba(220,38,38,.15); border: 1px solid rgba(220,38,38,.4); color: #f87171; font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 6px 16px; border-radius: 100px; margin-bottom: 24px; }
+h1 { font-size: clamp(28px,5vw,46px); font-weight: 800; line-height: 1.15; margin-bottom: 20px; }
+h1 span { color: #ef4444; }
+.subtitle { font-size: 17px; color: #94a3b8; line-height: 1.6; max-width: 520px; margin: 0 auto 40px; }
+.benefits { display: flex; flex-direction: column; gap: 12px; margin-bottom: 40px; text-align: left; }
+.benefit { display: flex; align-items: flex-start; gap: 12px; font-size: 15px; }
+.bi { flex-shrink: 0; width: 22px; height: 22px; background: #ef4444; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; }
+.card { width: 100%; max-width: 480px; margin: 0 24px 60px; background: #13131a; border: 1px solid #1e1e2e; border-radius: 20px; padding: 40px 36px; }
+.ct { font-size: 20px; font-weight: 700; margin-bottom: 8px; text-align: center; }
+.cs { font-size: 14px; color: #64748b; text-align: center; margin-bottom: 28px; }
+.fg { margin-bottom: 16px; }
+.fg label { display: block; font-size: 13px; font-weight: 600; color: #94a3b8; margin-bottom: 7px; }
+.fg input { width: 100%; padding: 13px 16px; background: #0d0d14; border: 1px solid #1e1e2e; border-radius: 10px; color: #fff; font-size: 15px; outline: none; }
+.fg input:focus { border-color: #ef4444; }
+.fr { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.btn { width: 100%; padding: 16px; margin-top: 8px; background: linear-gradient(135deg,#ef4444,#b91c1c); color: #fff; border: none; border-radius: 12px; font-size: 16px; font-weight: 700; cursor: pointer; }
+.priv { font-size: 12px; color: #475569; text-align: center; margin-top: 16px; }
+.success { display: none; text-align: center; padding: 20px 0; }
+.success h2 { font-size: 22px; font-weight: 700; margin-bottom: 10px; }
+.success p { font-size: 15px; color: #94a3b8; }
+.err { display: none; background: rgba(239,68,68,.1); color: #fca5a5; padding: 12px; border-radius: 8px; margin-bottom: 16px; text-align: center; }
+footer { padding: 20px; text-align: center; font-size: 12px; color: #334155; }
+@media (max-width:500px) { .card { padding: 28px 20px; } .fr { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<section class="hero">
+<div class="badge">Acceso Gratuito - Cupos Limitados</div>
+<h1>Aprende <span>IA y Automatizacion</span> para hacer crecer tu negocio en LATAM</h1>
+<p class="subtitle">Unete a Sadisoft - IA y Contenido. Recibe tutoriales exclusivos, flujos de n8n y estrategias de monetizacion.</p>
+<div class="benefits">
+<div class="benefit"><div class="bi">v</div><span><strong>Flujos de n8n</strong> para automatizar tu contenido y ventas</span></div>
+<div class="benefit"><div class="bi">v</div><span><strong>Tutoriales semanales</strong> de IA aplicada a negocios LATAM</span></div>
+<div class="benefit"><div class="bi">v</div><span><strong>Acceso anticipado</strong> a Sadi Vault Pro y nuevas herramientas</span></div>
+<div class="benefit"><div class="bi">v</div><span><strong>Comunidad exclusiva</strong> de emprendedores LATAM con IA</span></div>
+</div>
+</section>
+<div class="card">
+<div id="fs">
+<div class="ct">Quiero acceso gratuito</div>
+<div class="cs">Completa el formulario - gratis sin spam</div>
+<div class="err" id="er">Error al registrar. Intenta de nuevo.</div>
+<form id="lf">
+<div class="fr">
+<div class="fg"><label>Nombre *</label><input type="text" name="firstName" placeholder="Sadiel" required></div>
+<div class="fg"><label>Apellido *</label><input type="text" name="lastName" placeholder="Perez" required></div>
+</div>
+<div class="fg"><label>Email *</label><input type="email" name="email" placeholder="tucorreo@gmail.com" required></div>
+<div class="fg"><label>WhatsApp</label><input type="tel" name="phone" placeholder="+58 424 0000000"></div>
+<button type="submit" class="btn" id="sb">Acceso Gratis Ahora</button>
+<p class="priv">Sin spam. Solo contenido de valor.</p>
+</form>
+</div>
+<div class="success" id="ss">
+<h2>Ya estas dentro!</h2>
+<p>Pronto recibiras contenido exclusivo de <strong>Sadisoft IA y Contenido</strong>.</p>
+<br><br>
+<a href="https://www.youtube.com/channel/UCEtQsgxg0tGkVqbkgGW5JoQ" target="_blank" style="display:inline-block;padding:12px 24px;background:#ef4444;color:#fff;border-radius:10px;text-decoration:none;font-weight:700;">Ver canal en YouTube</a>
+</div>
+</div>
+<footer>2026 SadisoftWEB - Todos los derechos reservados</footer>
+<script>
+const W='https://primary-production-65455.up.railway.app/webhook/youtube-lead';
+document.getElementById('lf').addEventListener('submit',async function(e){
+e.preventDefault();
+const b=document.getElementById('sb'),er=document.getElementById('er');
+b.disabled=true;b.textContent='Registrando...';er.style.display='none';
+const fd=new FormData(this);
+const p={firstName:fd.get('firstName'),lastName:fd.get('lastName'),email:fd.get('email'),phone:fd.get('phone')||''};
+try{const r=await fetch(W,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(p)});
+if(r.ok){document.getElementById('fs').style.display='none';document.getElementById('ss').style.display='block';}
+else{throw new Error();}}
+catch{er.style.display='block';b.disabled=false;b.textContent='Acceso Gratis Ahora';}
+});
+</script>
+</body>
+</html>
